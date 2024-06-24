@@ -38,6 +38,6 @@ class Client:
                     break   
             return Table(name=name, socket=self.socket)
         except Socket.error as e:
-            print(f"socket error: {e}")
+            return f"socket error: {e}"
         except Exception as e:
-            print(f"exception: {e}")
+            return f"exception: {e}"
