@@ -1,6 +1,5 @@
 import socket as Socket
 from table import Table
-import time
 
 s = Socket.socket()
 
@@ -12,7 +11,6 @@ class Client:
     def __init__(self, host: str, port: int) -> None:
         self.host = host
         self.port = port
-
         s = Socket.socket(Socket.AF_INET, Socket.SOCK_STREAM)
         self.socket = s
 
